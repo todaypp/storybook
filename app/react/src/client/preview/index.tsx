@@ -1,5 +1,7 @@
 /* eslint-disable prefer-destructuring */
-import { start } from '@storybook/core/client';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import { start } from '@storybook/bundle/index';
 import { ClientStoryApi, Loadable } from '@storybook/addons';
 
 import './globals';
@@ -16,6 +18,8 @@ interface ClientApi extends ClientStoryApi<ReactFramework['storyResult']> {
   raw: () => any; // todo add type
 }
 const framework = 'react';
+
+console.log('storybook/bundle/index', { start });
 
 const api = start(renderToDOM, { render });
 

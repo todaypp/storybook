@@ -37,11 +37,19 @@
     "*.d.ts"
   ],
   "scripts": {
-    "prepare": "node ../../scripts/prepare.js"
+    "prepare": "node ../../scripts/prepare.js",
+    "prebundle": "node ./scripts/prebundle.js"
   },
   "dependencies": {
     "@storybook/core-client": "6.5.0-alpha.1",
     "@storybook/core-server": "6.5.0-alpha.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "rollup": "^2.60.2"
   },
   "peerDependencies": {
     "@storybook/builder-webpack5": "6.5.0-alpha.1",
