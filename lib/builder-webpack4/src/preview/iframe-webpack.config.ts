@@ -38,10 +38,11 @@ const storybookPaths: Record<string, string> = [
   'channel-postmessage',
   'components',
   'core-events',
+  'core-client',
   'router',
   'theming',
   'semver',
-  'client-api',
+  // 'client-api',
   'client-logger',
   'preview-web',
   'store',
@@ -123,7 +124,7 @@ export default async (options: Options & Record<string, any>): Promise<Configura
     );
 
     configs.forEach((configFilename: any) => {
-      const clientApi = storybookPaths['@storybook/client-api'];
+      const clientApi = storybookPaths['@storybook/core-client'];
       const clientLogger = storybookPaths['@storybook/client-logger'];
 
       virtualModuleMapping[`${configFilename}-generated-config-entry.js`] = interpolate(
@@ -237,6 +238,7 @@ export default async (options: Options & Record<string, any>): Promise<Configura
       alias: {
         ...(features?.emotionAlias ? themingPaths : {}),
         ...storybookPaths,
+        '@storybook/client-api': storybookPaths['@storybook/core-client'],
         react: path.dirname(require.resolve('react/package.json')),
         'react-dom': path.dirname(require.resolve('react-dom/package.json')),
       },

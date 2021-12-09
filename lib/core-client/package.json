@@ -19,8 +19,8 @@
     "url": "https://opencollective.com/storybook"
   },
   "license": "MIT",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "bundle/preview/index.js",
+  "module": "bundle/preview/index.js",
   "types": "dist/ts3.9/index.d.ts",
   "typesVersions": {
     "<3.8": {
@@ -37,7 +37,8 @@
     "*.d.ts"
   ],
   "scripts": {
-    "prepare": "node ../../scripts/prepare.js"
+    "prepare": "node ../../scripts/prepare.js",
+    "prebundle": "node ./scripts/prebundle.js"
   },
   "dependencies": {
     "@storybook/addons": "6.5.0-alpha.1",
@@ -61,6 +62,13 @@
     "unfetch": "^4.2.0",
     "util-deprecate": "^1.0.2"
   },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "rollup": "^2.60.2"
+  },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0",
     "react-dom": "^16.8.0 || ^17.0.0",
@@ -75,5 +83,5 @@
     "access": "public"
   },
   "gitHead": "fbf6e247a099ec45c30f8594f255a088847b7957",
-  "sbmodern": "dist/modern/index.js"
+  "sbmodern": "bundle/preview/index.js"
 }
