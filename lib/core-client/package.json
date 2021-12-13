@@ -38,7 +38,9 @@
   ],
   "scripts": {
     "prepare": "node ../../scripts/prepare.js",
-    "prebundle": "node ./scripts/prebundle.js"
+    "prebundle": "node ./scripts/prebundle.js",
+    "dtsbundle2": "node ./scripts/dtsbundle.js",
+    "dtsbundle": "dts-bundle-generator --no-banner -o ./bundle/index.d.ts ./src/index.ts"
   },
   "dependencies": {
     "@storybook/addons": "6.5.0-alpha.1",
@@ -67,7 +69,11 @@
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-typescript": "^8.3.0",
-    "rollup": "^2.60.2"
+    "dts-bundle-generator": "^6.2.0",
+    "rollup": "^2.60.2",
+    "rollup-plugin-dts": "^3.0.0",
+    "rollup-plugin-flat-dts": "^1.4.0",
+    "tsc-prog": "^2.2.1"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0",

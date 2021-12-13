@@ -42,3 +42,5 @@ examples/angular-cli/addon-jest.testresults.json
 !/**/.yarn/sdks
 !/**/.yarn/versions
 /**/.pnp.*
+examples/*/*-stats.json
+examples/*/*-stats-*.json

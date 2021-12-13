@@ -99,6 +99,11 @@ function run() {
             process.env.CI ? `--max-parallel=${maxConcurrentTasks}` : ''
           }`
         );
+        spawn(
+          `nx run-many --target=prebundle --all --parallel ${
+            process.env.CI ? `--max-parallel=${maxConcurrentTasks}` : ''
+          }`
+        );
       },
       order: 2,
     }),

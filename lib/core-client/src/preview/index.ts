@@ -12,4 +12,4 @@ export default {
   StoryStore,
 };
 
-export { start, toId, ClientApi, StoryStore };
+export { start, toId, StoryStore };
