@@ -1,5 +1,4 @@
 import {
-  AnyFramework,
   InputType,
   StoryContext as StoryContextForFramework,
   LegacyStoryFn as LegacyStoryFnForFramework,
