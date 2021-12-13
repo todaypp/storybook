@@ -199,7 +199,7 @@ module.exports = {
           title: 'Measure & Outline',
           type: 'link',
         },
-         {
+        {
           pathSegment: 'interactions',
           title: 'Interactions',
           type: 'link',
