@@ -1,3 +1,4 @@
+import global from 'global';
 import React, { createElement, ElementType, FunctionComponent, Fragment } from 'react';
 
 import type { Parameters } from '@storybook/api';
@@ -6,7 +7,8 @@ import { IFrame } from './IFrame';
 import { EmptyBlock } from './EmptyBlock';
 import { ZoomContext } from './ZoomContext';
 
-const BASE_URL = 'iframe.html';
+const { PREVIEW_URL } = global;
+const BASE_URL = PREVIEW_URL || 'iframe.html';
 
 export enum StoryError {
   NO_STORY = 'No component or story to display',
