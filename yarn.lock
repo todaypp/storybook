@@ -9216,13 +9216,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook/core@workspace:lib/core"
   dependencies:
-    "@rollup/plugin-commonjs": ^21.0.1
-    "@rollup/plugin-json": ^4.1.0
-    "@rollup/plugin-node-resolve": ^13.0.6
-    "@rollup/plugin-typescript": ^8.3.0
     "@storybook/core-client": 6.5.0-alpha.3
     "@storybook/core-server": 6.5.0-alpha.3
-    rollup: ^2.60.2
   peerDependencies:
     "@storybook/builder-webpack5": 6.5.0-alpha.3
     react: ^16.8.0 || ^17.0.0
