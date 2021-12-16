@@ -8674,6 +8674,7 @@ __metadata:
     "@storybook/client-api": 6.5.0-alpha.3
     "@storybook/client-logger": 6.5.0-alpha.3
     "@storybook/components": 6.5.0-alpha.3
+    "@storybook/core-client": 6.5.0-alpha.3
     "@storybook/core-common": 6.5.0-alpha.3
     "@storybook/core-events": 6.5.0-alpha.3
     "@storybook/node-logger": 6.5.0-alpha.3
@@ -8762,6 +8763,7 @@ __metadata:
     "@storybook/client-api": 6.5.0-alpha.3
     "@storybook/client-logger": 6.5.0-alpha.3
     "@storybook/components": 6.5.0-alpha.3
+    "@storybook/core-client": 6.5.0-alpha.3
     "@storybook/core-common": 6.5.0-alpha.3
     "@storybook/core-events": 6.5.0-alpha.3
     "@storybook/node-logger": 6.5.0-alpha.3
